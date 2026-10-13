@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071019">
+<title>AUREVIO® — Wear Your Legacy</title>
+<meta name="description" content="Discover watches, headphones, speakers and everyday technology at AUREVIO. Timeless pieces. Modern character.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="wordmark" href="#" aria-label="AUREVIO home"><img src="aurevio-logo.png" alt="AUREVIO — Since 2026"></a>
+  <nav><a href="#shop">Shop</a><a href="#categories">Collections</a><a href="#story">Our Story</a></nav>
+  <button class="cart-button" id="openCart" aria-label="Open shopping bag">Bag <span id="cartCount">0</span></button>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">PREMIUM ACCESSORIES & LIFESTYLE</p>
+      <h1>Wear Your<br><em>Legacy.</em></h1>
+      <p class="hero-sub">Timeless pieces. Modern character.</p>
+      <a class="gold-button" href="#shop">Discover the collection <span>↗</span></a>
+    </div>
+    <div class="hero-art" aria-label="Luxury watches and audio collection">
+      <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+      <div class="watch watch-dark"><div class="strap"></div><div class="dial"><small>AUREVIO</small><b>10:10</b><i></i></div></div>
+      <div class="watch watch-light"><div class="strap"></div><div class="dial"><small>AUREVIO</small><b>10:10</b><i></i></div></div>
+      <div class="headphone"><div class="earcup left"></div><div class="headband"></div><div class="earcup right"></div></div>
+      <div class="hero-caption">TIMELESS DESIGN <span>—</span> EVERYDAY SOUND</div>
+    </div>
+  </section>
+  <section class="category-section" id="categories">
+    <div class="section-heading"><p class="eyebrow">FIND YOUR SIGNATURE</p><h2>Made for your everyday.</h2></div>
+    <div class="category-grid">
+      <button class="category-card" data-category="Men's Watches"><span>01 / TIME</span><strong>Men's Watches</strong><i>↗</i></button>
+      <button class="category-card" data-category="Women's Watches"><span>02 / TIME</span><strong>Women's Watches</strong><i>↗</i></button>
+      <button class="category-card" data-category="Headphones"><span>03 / SOUND</span><strong>Headphones</strong><i>↗</i></button>
+      <button class="category-card" data-category="Speakers"><span>04 / SOUND</span><strong>Speakers</strong><i>↗</i></button>
+      <button class="category-card" data-category="Gadgets"><span>05 / TECH</span><strong>Gadgets</strong><i>↗</i></button>
+    </div>
+  </section>
+  <section class="shop-section" id="shop">
+    <div class="shop-heading"><div><p class="eyebrow">THE AUREVIO EDIT</p><h2>Featured products</h2></div><div class="filters" id="filters"><button class="filter active" data-filter="All">All</button><button class="filter" data-filter="Men's Watches">Men</button><button class="filter" data-filter="Women's Watches">Women</button><button class="filter" data-filter="Headphones">Audio</button><button class="filter" data-filter="Speakers">Speakers</button><button class="filter" data-filter="Gadgets">Gadgets</button></div></div>
+    <div class="product-grid" id="productGrid"></div>
+    <p class="demo-note">Sample catalogue for design preview. Replace product names, images, prices and stock with your verified supplier details before launch.</p>
+  </section>
+  <section class="story" id="story"><p class="eyebrow">OUR PHILOSOPHY</p><h2>Style is personal.<br><em>Legacy is lasting.</em></h2><p>AUREVIO brings together considered accessories and everyday technology for people who choose with intention.</p></section>
+  <section class="newsletter"><div><p class="eyebrow">STAY IN THE LOOP</p><h2>New arrivals. Timeless choices.</h2></div><a class="gold-button" href="mailto:hello@aurevio.com?subject=AUREVIO%20updates">Contact AUREVIO <span>↗</span></a></section>
+</main>
+<footer><a class="wordmark footer-logo" href="#"><img src="aurevio-logo.png" alt="AUREVIO — Since 2026"></a><p>WEAR YOUR LEGACY.</p><small>© <span id="year"></span> AUREVIO®. All rights reserved.</small><small class="footer-warning">Preview store — checkout is not yet connected to live payments.</small></footer>
+<div class="cart-overlay" id="cartOverlay" hidden>
+  <div class="cart-backdrop" id="closeCartBackdrop"></div>
+  <aside class="cart-panel" aria-label="Shopping bag">
+    <div class="cart-head"><h2>Your bag</h2><button id="closeCart" aria-label="Close cart">✕</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-bottom"><div class="subtotal"><span>Subtotal</span><strong id="subtotal">₹0</strong></div><p>Shipping and final totals will be confirmed at checkout.</p><button class="gold-button full" id="checkoutButton">Continue to checkout</button><small>Demo only: online payment is not enabled yet.</small></div>
+  </aside>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
